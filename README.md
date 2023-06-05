@@ -28,4 +28,4 @@ java -jar target/ComputerStore-1.0-SNAPSHOT.jar
 * `localhost:8181/h2-console`
 * DB: jdbc:h2:./shop
 * User: `sa`
-* Password `sa`
+* Password: `sa`
