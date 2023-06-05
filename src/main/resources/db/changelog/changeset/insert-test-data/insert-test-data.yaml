@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert_test_data_computer
+      author: current
+      changes:
+        - sqlFile:
+            path: db/changelog/changeset/insert-test-data/insert-test-data.sql

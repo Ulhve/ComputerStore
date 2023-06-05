@@ -1,0 +1,25 @@
+databaseChangeLog:
+  - preConditions:
+      - type: h2
+  - changeSet:
+      id: init_database
+      author: current
+      changes:
+        - tagDatabase:
+            tag: init_database
+  - include:
+      file: db/changelog/changeset/create/create-tables.yaml
+  - changeSet:
+      id: created_tables
+      author: current
+      changes:
+        - tagDatabase:
+            tag: created_tables
+  - include:
+      file: db/changelog/changeset/insert-test-data/insert-test-data.yaml
+  - changeSet:
+      id: inserted-test-data
+      author: current
+      changes:
+        - tagDatabase:
+            tag: inserted-test-data
