@@ -26,5 +26,6 @@ java -jar target/ComputerStore-1.0-SNAPSHOT.jar
 Зайти в бд через браузер:
 
 * `localhost:8181/h2-console`
+* DB: jdbc:h2:./shop
 * User: `sa`
 * Password `sa`
