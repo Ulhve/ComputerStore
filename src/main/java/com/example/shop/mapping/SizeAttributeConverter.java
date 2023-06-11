@@ -48,7 +48,7 @@ public class SizeAttributeConverter
         if (source != null) {
             return source.getValue();
         } else {
-            throw new IllegalArgumentException(source.toString());
+            throw new IncorrectArgumentException();
         }
     }
 }

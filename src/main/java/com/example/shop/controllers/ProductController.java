@@ -3,7 +3,6 @@ package com.example.shop.controllers;
 import com.example.shop.dao.ProductType;
 import com.example.shop.dto.ProductDTO;
 import com.example.shop.service.ProductService;
-import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
@@ -18,7 +17,7 @@ public class ProductController {
 
     @PostMapping
     public ProductDTO createProduct(
-            @Valid @RequestBody ProductDTO productDTO
+            @RequestBody ProductDTO productDTO
     ) {
         return productService.createProduct(productDTO);
     }
